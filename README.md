@@ -31,4 +31,4 @@ To test if you have completed this assignment correctly, we have created a proje
 
 ![warproject](assignment.png)
 
-First download this .war file: license-0.0.3-SNAPSHOT.war. Now, you can run java -jar license-0.0.3-SNAPSHOT.war and it will start this Spring Boot project on port 3000. Visit localhost:3000 and you should see the picture above but with the information of your database. If not, you have added products and categories incorrectly.
+First download this .war file: [license-0.0.3-SNAPSHOT.war](https://github.com/itzedu/warFiles/raw/master/license-0.0.3-SNAPSHOT.war). Now, you can run ```java -jar license-0.0.3-SNAPSHOT.war``` and it will start this Spring Boot project on port 3000. Visit localhost:3000 and you should see the picture above but with the information of your database. If not, you have added products and categories incorrectly.
