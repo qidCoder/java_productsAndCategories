@@ -40,7 +40,7 @@
 								<td>${product.description}</td>
 								<td>${product.price}</td>
 								<td>
-									<c:forEach items="${product.category}" var="cat">
+									<c:forEach items="${product.categories}" var="cat">
 										${cat.categoryName},
 									</c:forEach>
 								</td>
@@ -70,7 +70,7 @@
 							<tr>
 								<td><a href="/categorys/${category.id}">${category.categoryName}</a></td>
 								<td>
-									<c:forEach items="${category.product}" var="prod">
+									<c:forEach items="${category.products}" var="prod">
 										${prod.productName},
 									</c:forEach>
 								</td>

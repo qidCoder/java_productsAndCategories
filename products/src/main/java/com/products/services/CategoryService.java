@@ -49,7 +49,7 @@ public class CategoryService {
 	
 	//Get all categories that a specific product has not been categorized yet
 	public List<Category> findCategoriesUnassigned(Product product) {
-		return this.categoryRepo.findProductsUnassigned(product);
+		return this.categoryRepo.findByProductsNotContains(product);
 	}
 	
 	// Add new Product to a Category

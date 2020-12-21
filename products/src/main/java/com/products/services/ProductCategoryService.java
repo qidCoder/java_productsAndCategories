@@ -20,6 +20,7 @@ public class ProductCategoryService {
 	//CRUD Methods
 	// Creates a category
 	public ProductCategory createProductCategory(ProductCategory newProductCategory) {
+		System.out.println("From Service: " + newProductCategory.getId());
 		return this.productCategoryRepo.save(newProductCategory);
 	}
 	

@@ -17,10 +17,10 @@
 		
 		<form:form method="POST" action="/categorys/create" modelAttribute="category">
 			<div class="form-group row">
-				<form:label path="name" class="col-sm-2 col-form-label">Name:
-					<form:errors path="name"/>
+				<form:label path="categoryName" class="col-sm-2 col-form-label">Name:
+					<form:errors path="categoryName"/>
 					<div class="col-sm-10">
-						<form:input path="name" class="form-control"/>
+						<form:input path="categoryName" class="form-control"/>
 					</div>
 				</form:label>
 			</div>

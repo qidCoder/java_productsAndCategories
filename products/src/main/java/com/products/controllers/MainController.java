@@ -86,7 +86,7 @@ public class MainController {
 	
 	//display specific product
 	@GetMapping("/products/{id}")
-	public String showProduct(Model viewModel, @PathVariable("id") Long id, @ModelAttribute("productCategory") ProductCategory productCategory) {//need model to display to frontend from DB
+	public String showProduct(@PathVariable("id") Long id, @ModelAttribute("productCategory") ProductCategory productCategory, Model viewModel) {//need model to display to frontend from DB
 
 
 		Product showProduct = this.productService.getSingleProduct(id);
@@ -140,7 +140,7 @@ public class MainController {
 		}
 		else {
 			productCategoryService.createProductCategory(productCategory);
-			Long id = productCategory.getProduct().getId();
+//			Long id = productCategory.getProduct().getId();
 			return "redirect:/dashboard";
 			// return "redirect:/products/"+id;
 		}  

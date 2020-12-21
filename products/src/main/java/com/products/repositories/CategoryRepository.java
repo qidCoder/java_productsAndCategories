@@ -14,5 +14,5 @@ public interface CategoryRepository extends CrudRepository<Category, Long>{
 	List<Category> findAll();
 	
     //retrieves all categories that a specific product has not been assigned to yet
-    List<Category> findProductsUnassigned(Product product);
+	List<Category> findByProductsNotContains(Product product);
 }

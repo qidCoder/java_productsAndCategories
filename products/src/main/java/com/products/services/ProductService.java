@@ -35,7 +35,7 @@ public class ProductService {
 	
 	//Gets all products that are not categorized to a specific category
 	public List<Product> findProductsUnassigned(Category category) {
-		return this.productRepo.findUnassignedCategories(category);
+		return this.productRepo.findByCategoriesNotContains(category);
 	}
 
 	
